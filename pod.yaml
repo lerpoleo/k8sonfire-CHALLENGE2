@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+ name: pod-apache
+ labels:
+   app: apache
+   service: web
+spec:
+ containers:
+   - image: roxsross12/k8s_test_web:latest
+     name: contenedor-apache
+     
